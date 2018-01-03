@@ -1,7 +1,0 @@
-{
-  "name": "angular-wc-app",
-  "short_name": "angular-wc-app",
-  "description": "Angular App with WebComponents",
-  "start_url": "/",
-  "display": "standalone"
-}
