@@ -10,5 +10,5 @@ before_install:
   - "sh -e /etc/init.d/xvfb start"
 script:
   - "ng test"
-  - "ng build"
-  - "ngh --repo=https://GITHUB_TOKEN@github.com/amahdy/angular-webcomponent.git --no-silent"
+  - "ng build --prod"
+  - "ngh --repo=https://$GITHUB_TOKEN@github.com/amahdy/angular-webcomponent.git --no-silent"
