@@ -2,6 +2,7 @@ language: node_js
 node_js: stable
 before_install:
   - "npm install -g @angular/cli"
+  - "npm install -g angular-cli-ghpages"
   - "npm install -g bower"
   - "bower install"
   - "npm install"
@@ -10,9 +11,4 @@ before_install:
 script:
   - "ng test"
   - "ng build"
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  on:
-    branch: master
+  - "ngh --repo=https://GITHUB_TOKEN@github.com/amahdy/angular-webcomponent.git"
