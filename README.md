@@ -1,10 +1,10 @@
-[![Build Status](https://travis-ci.org/amahdy/polymer-webcomponent.svg?branch=master)](https://travis-ci.org/amahdy/polymer-webcomponent)
+[![Build Status](https://travis-ci.org/amahdy/angular-webcomponent.svg?branch=master)](https://travis-ci.org/amahdy/angular-webcomponent)
 
-# Polymer App with Web Components
+# Angular App with Web Components
 
-A concept of an app built with Polymer and Web Components, with possibilities to query and manipulate data, and works totally offline.
+A concept of an app built with Angular and Web Components, with possibilities to query and manipulate data, and works totally offline.
 
-You can try the [online demo](https://amahdy.github.io/polymer-webcomponent/), and you can also [reset the local modifications](https://amahdy.github.io/polymer-webcomponent/?resetdemo) at anytime.
+You can try the [online demo](https://amahdy.github.io/angular-webcomponent/), and you can also [reset the local modifications](https://amahdy.github.io/angular-webcomponent/?resetdemo) at anytime.
 
 ![App Preview](./readme_files/preview.png)
 
@@ -14,35 +14,35 @@ Coming soon.
 
 ## Try out this application
 
-Make sure you have [Bower](https://bower.io) and [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Clone this project locally then:
+Make sure you have [Bower](https://bower.io) and [Angular CLI](https://www.npmjs.com/package/angular-cli) installed. Clone this project locally then:
 
 ### Installing Dependencies
 
 Install Bower dependencies
 ```bash
-$ polymer install
+$ bower install
+```
+
+Install Node dependencies
+```bash
+$ npm install
 ```
 
 ### Running Your Application
 
-Start the application on port 8080
+Start the application on port 4200
 ```bash
-$ polymer serve --port 8080
+$ ng serve
 ```
 
 ### Viewing Your Application
 
-The application will be available on this address by default: [http://localhost:8080](http://localhost:8080).
+The application will be available on this address by default: [http://localhost:4200](http://localhost:4200).
 
 ### Resetting Local Modiciations
 
-Modifications done in the app are persisted in the brwoser, you can reset them using `?resetdemo`, for example: [http://localhost:8080/?resetdemo](http://localhost:8080/?resetdemo)
+Modifications done in the app are persisted in the brwoser, you can reset them using `?resetdemo`, for example: [http://localhost:4200/?resetdemo](http://localhost:4200/?resetdemo).
 
 ### Running Tests
 
-Tests can be run locally by visiting this URL: [http://localhost:8080/components/polymer-wc-app/test/](http://localhost:8081/components/polymer-wc-app/test/).
-
-You can also run tests using command line
-```bash
-$ polymer test
-```
+Coming soon.

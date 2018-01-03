@@ -1,11 +1,12 @@
 language: node_js
 node_js: stable
 before_install:
-  - "npm install -g polymer-cli"
-  - "polymer install"
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-script: "polymer test -l chrome"
+  # - "npm install -g @angular/cli"
+  - "bower install"
+  - "npm install"
+  # - "export DISPLAY=:99.0"
+  # - "sh -e /etc/init.d/xvfb start"
+# script: "ng test -l chrome"
 deploy:
   provider: pages
   skip_cleanup: true
