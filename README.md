@@ -4,7 +4,7 @@
 
 A concept of an app built with Angular and Web Components, with possibilities to query and manipulate data, and works totally offline.
 
-You can try the [online demo](https://amahdy.github.io/angular-webcomponent/), and you can also [reset the local modifications](https://amahdy.github.io/angular-webcomponent/?resetdemo) at anytime.
+You can try the [online demo](https://amahdy.github.io/angular-webcomponent/dist/), and you can also [reset the local modifications](https://amahdy.github.io/angular-webcomponent/dist/?resetdemo) at anytime.
 
 ![App Preview](./readme_files/preview.png)
 
