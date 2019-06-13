@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { PolymerModule } from '@codebakery/origami';
+import { OrigamiModule } from '@codebakery/origami';
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
-    PolymerModule.forRoot(),
+    OrigamiModule,
     BrowserModule
   ],
   providers: [],

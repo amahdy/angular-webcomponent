@@ -1,8 +1,7 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { webcomponentsReady } from '@codebakery/origami';
+import { webcomponentsReady } from '@codebakery/origami/polyfills';
 
-import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 if (environment.production) {
@@ -10,10 +9,12 @@ if (environment.production) {
 }
 
 webcomponentsReady().then(() => {
-  platformBrowserDynamic().bootstrapModule(AppModule, {
-    enableLegacyTemplate: false
-  });
-}).catch(error => {
-  // No WebComponent support and webcomponentsjs is not loaded
-  console.error(error);
+  // requires "module": "esnext" in tsconfig.json "compilerOptions" and
+  // "angularCompilerOptions": {
+  //   "entryModule": "app/app.module#AppModule"
+  // }
+  return import('./app/app.module');
+})
+.then(({ AppModule }) => {
+  platformBrowserDynamic().bootstrapModule(AppModule);
 });
