@@ -1,6 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { PolymerModule } from '@codebakery/origami';
+import { OrigamiModule } from '@codebakery/origami';
 import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -9,7 +9,7 @@ describe('AppComponent', () => {
         AppComponent
       ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
-      imports: [PolymerModule.forRoot()],
+      imports: [OrigamiModule],
     }).compileComponents();
   }));
   it('should create the app', async(() => {
